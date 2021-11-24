@@ -5,42 +5,48 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.eisenhower-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.eisenhower-matrix img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.eisenhower-matrix .eisenhower-matrix__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa { 
+  .eisenhower-matrix { 
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.main-block {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.task,
+.main-block__add-item__add-field__field,
+.incomplete-tasks__field,
+.incomplete-tasks__field-name,
+.completed-tasks__field-name,
+.completed-tasks__field
+ {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.main-block__add-item__add-field {
   display: flex;
 }
 
@@ -145,13 +151,13 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+.tasks__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.tasks__delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -168,11 +174,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.editMode input[type="text"] {
+ul li.incomplete-tasks__edit-list input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.incomplete-tasks__edit-list label {
   display: none;
 }
